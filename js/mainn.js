@@ -30,12 +30,18 @@ $('.t4s_btn_play').click(function(){
 });
 $(document).mouseup(function(e) 
 {
-    var container = $('.t4s_video_wrap');
+    var container = $('.t4s_video_wrap'),
+    container2 = $('.t4s_menu_mobile');
 
     // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) 
+    if (!container.is(e.target) && container.has(e.target).length === 0 ) 
     {
         container.hide(300);
+        $('.t4s_oveflow').hide(300)
+    }
+    if (!container2.is(e.target) && container2.has(e.target).length === 0 ) 
+    {
+        container2.hide(300);
         $('.t4s_oveflow').hide(300)
     }
 });
