@@ -487,23 +487,23 @@ $(document).mouseup(function(e)
 //         }
 //     });
 
-//tabs
-// let tabs = document.querySelectorAll(".t4s_tab_links");
-// let tabsArray = Array.from(tabs);
-// let tabs_content = document.querySelectorAll(".t4s_content_tab");
-// let tabsArray_content = Array.from(tabs_content);
-// tabsArray.forEach((ele) => {
-//     ele.addEventListener("click", function (e) {
-//       // console.log(ele);
-//       tabsArray.forEach((ele) => {
-//         ele.classList.remove("active");
-//       });
-//       e.currentTarget.classList.add("active");
-//       divsArray.forEach((div) => {
-//         div.style.display = "none";
-//       });
-//       // console.log(e.currentTarget.dataset.cont);
-//       document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
-//     });
-//   });
+// tabs
+let tabs = document.querySelectorAll(".t4s_tab_links");
+let tabsArray = Array.from(tabs);
+let tabs_content = document.querySelectorAll(".t4s_content_tab");
+let tabsArray_content = Array.from(tabs_content);
+tabsArray.forEach((ele) => {
+    ele.addEventListener("click", function (e) {
+      // console.log(ele);
+      tabsArray.forEach((ele) => {
+        ele.classList.remove("active");
+      });
+      e.currentTarget.classList.add("active");
+      divsArray.forEach((div) => {
+        div.style.display = "none";
+      });
+      // console.log(e.currentTarget.dataset.cont);
+      document.querySelector(e.currentTarget.dataset.cont).style.display = "block";
+    });
+  });
 
