@@ -1122,7 +1122,11 @@ tr > td:last-child{
     margin-bottom: unset;
     margin-top: 9px;
 }
+.t4s_underline{
+    text-decoration:line-through ;
+}
 tr .t4s_table_title_bottom{
+    
     font-size: 18px;
     line-height: 1.2em;
     color: #000000;
