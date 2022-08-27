@@ -1069,6 +1069,10 @@ margin-top: 22px;
     border: none;
     outline: none;
 }
+.t4s_video_banner1,.t4s_video_banner2,.t4s_video_banner3{
+    border-radius: 5px;
+    width: 100%;
+}
 .row .t4s_slide_wrap_item {
     flex-shrink: 0;
     max-width: 100%;
@@ -1131,6 +1135,10 @@ margin-top: 22px;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
+}
+.t4s_title_usen_and_the4 a:hover{
+    color: #0ec0ad;
+    transition: 0.3s;
 }
 .t4s_title_usen_and_the4{
     display: flex;

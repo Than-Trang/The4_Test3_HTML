@@ -23,27 +23,11 @@ $('.t4s_li_sub_menu').click(function(){
     $('.t4s_sub_menu').toggleClass('open');
 });
 
-$('.t4s_btn_play').click(function(){
-    $('.t4s_video_wrap').show()
-    $('.t4s_oveflow').show();
-
-});
-$('.t4s_exit_video').click(function(){
-    $('.t4s_video_wrap').hide(300)
-    $('.t4s_oveflow').hide();
-
-});
 $(document).mouseup(function(e) 
 {
-    var container = $('.t4s_video_wrap'),
-    container2 = $('.t4s_menu_mobile');
+    var container2 = $('.t4s_menu_mobile');
 
     // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0 ) 
-    {
-        container.hide(300);
-        $('.t4s_oveflow').hide();
-    }
     if (!container2.is(e.target) && container2.has(e.target).length === 0 ) 
     {
         container2.hide(300);
@@ -93,9 +77,17 @@ tabsArray.forEach((ele) => {
         });
   });
 
- 
-
- 
 $('.t4s_tab_links2').click(function (e) {
     e.preventDefault();
  });
+
+//popup
+ $('.popup_video,.popup_video2 , .popup_video3').magnificPopup({
+    disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+
+    fixedContentPos: false
+  });

@@ -8,7 +8,7 @@
     <title>landing page 22</title>
     <!-- css -->
     <link rel="stylesheet" href="./animate.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,36 @@
     opacity: 1;
 }
     </style>
+    <style type="text/css">
+        /**
+         * Simple fade transition,
+         */
+        .mfp-fade.mfp-bg {
+          opacity: 0;
+          -webkit-transition: all 0.15s ease-out; 
+          -moz-transition: all 0.15s ease-out; 
+          transition: all 0.15s ease-out;
+        }
+        .mfp-fade.mfp-bg.mfp-ready {
+          opacity: 0.8;
+        }
+        .mfp-fade.mfp-bg.mfp-removing {
+          opacity: 0;
+        }
+  
+        .mfp-fade.mfp-wrap .mfp-content {
+          opacity: 0;
+          -webkit-transition: all 0.15s ease-out; 
+          -moz-transition: all 0.15s ease-out; 
+          transition: all 0.15s ease-out;
+        }
+        .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+          opacity: 1;
+        }
+        .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+          opacity: 0;
+        }
+      </style>
     <!-- flickity -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
@@ -31,20 +61,6 @@
 <body>
 
     <div class="position-relative">
-        <div class="t4s_video_wrap">
-            <div class="t4s_video_wrap_w">
-                <div class="t4s_video_play position-relative">
-                    <button class="t4s_exit_video position-absolute">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-                    </button>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/cbAj3biUeDI"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-
-        </div>
         <div class="t4s_oveflow"></div>
         <!-- start header -->
         <header>
@@ -1722,17 +1738,20 @@
                     <div class="t4s_item_video_wrap col-lg-4 col-sm-6 col-12">
                         <div class="t4s_item_video">
                             <div class="t4s_thumnail position-relative">
-                                <img class="t4s_video_banner1" src="./images/Kalles is the best Shopify theme I have ever used..png" alt="">
-                                <div class="t4s_btn_play position-absolute">
+                                <a class="popup_video" href="https://www.youtube.com/watch?v=f_k9VZKOpsY">
+                                    <img class="t4s_video_banner1" src="./images/Kalles is the best Shopify theme I have ever used..png" alt="">
+                                
+                                <div class="t4s_btn_play position-absolute" >
                                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17" width="15"
                                         height="17">
                                         <path id="Triangle 1" class="s0" d="m14 9l-14 8v-16z" />
                                     </svg>
                                 </div>
+                            </a>
 
                             </div>
                             <div class="t4s_title_video">
-                                <a href="https://www.youtube.com/watch?v=f_k9VZKOpsY&t=1s&ab_channel=The4Studio">Tyler Wisniewski</a>
+                                <a class="popup_video" href="https://www.youtube.com/watch?v=f_k9VZKOpsY">Tyler Wisniewski</a>
                                
                             </div>
                             <p class="t4s_sub_title_video">"Tyler has been using Kalles since the very beginning and he is completely satisfied with The4's product quality and customer support. Now, he is not only a customer of The4 but he is also a close friend of ours. Kalles and the The4 team have helped Tyler bring Yoga Junkies to great growth and scale the business.
@@ -1742,17 +1761,20 @@
                     <div class="t4s_item_video_wrap col-lg-4 col-sm-6 col-12">
                         <div class="t4s_item_video">
                             <div class="t4s_thumnail position-relative">
-                                <img class="t4s_video_banner2" src="./images/I am very surprised about Kalles theme.png" alt="">
+                                <a class="popup_video2" href="https://www.youtube.com/watch?v=W-tZMwUw5ZM" class="popup_video" >
+                                    <img class="t4s_video_banner2" src="./images/I am very surprised about Kalles theme.png" alt="">
+                                
                                 <div class="t4s_btn_play position-absolute">
                                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17" width="15"
                                         height="17">
                                         <path id="Triangle 1" class="s0" d="m14 9l-14 8v-16z" />
                                     </svg>
                                 </div>
+                            </a>
 
                             </div>
                             <div class="t4s_title_video">
-                                <a href="https://www.youtube.com/watch?v=W-tZMwUw5ZM&t=4s&ab_channel=The4Studio">Alice Yu</a>
+                                <a class="popup_video2"  href="https://www.youtube.com/watch?v=W-tZMwUw5ZM">Alice Yu</a>
                                
                             </div>
                             <p class="t4s_sub_title_video">"Alice Yu is part of a wireless headset startup. She chose Kalles because of its minimalist design, suitable for technology products. In addition, she also appreciates The4 team for their enthusiastic support to launch Hi+Hear's official website.
@@ -1762,17 +1784,20 @@
                     <div class="t4s_item_video_wrap col-lg-4 col-sm-6 col-12">
                         <div class="t4s_item_video">
                             <div class="t4s_thumnail position-relative">
+                                <a class="popup_video3" href="https://www.youtube.com/watch?v=ZQNz2ZVZ5YM">
                                 <img class="t4s_video_banner3" src="./images/Online Business.png" alt="">
+                            
                                 <div class="t4s_btn_play position-absolute">
                                     <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 17" width="15"
                                         height="17">
                                         <path id="Triangle 1" class="s0" d="m14 9l-14 8v-16z" />
                                     </svg>
                                 </div>
+                            </a>
 
                             </div>
                             <div class="t4s_title_video">
-                                <a href="https://www.youtube.com/watch?v=ZQNz2ZVZ5YM&t=3s&ab_channel=The4Studio">Mohamed Abo Jad</a>
+                                <a class="popup_video3"  href="https://www.youtube.com/watch?v=ZQNz2ZVZ5YM">Mohamed Abo Jad</a>
                                
                             </div>
                             <p class="t4s_sub_title_video">"Mohamed Abo Jad - owner of the Butikkom brand used Kalles Theme for their online store. They shared that Kalles Theme is one of the themes that has a smart design and meets the requirements for functionality as well as layout.
@@ -2235,6 +2260,8 @@
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <!-- flickity -->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!-- magnific-popup -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
     <script src="./js/wow.min.js"></script>
     <script src="./js/mainn.js"></script>
