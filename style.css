@@ -898,6 +898,7 @@ margin-top: 22px;
     border: none;
     background-color: #0dc1ad;
     font-size: 14px;
+    height: fit-content;
     line-height: 28px;
     color: #ffffff;
     font-weight: 500;
@@ -1647,6 +1648,7 @@ flex: 1 0 0%;
 .t4s_buy_unsen{
     margin-right: 4px;
     margin-left: 4px;
+    height: fit-content;
 }
 .t4s_btn_open_shopify:hover{
     background: #000;
