@@ -537,7 +537,6 @@ ul{
 .t4s_pt_32{
     padding-left: 20px;
     padding-right: 20px;
-    margin-bottom: 48px;
 }
 .t4s_tab_links:hover{
     color: #0ec0ad;
@@ -1699,6 +1698,10 @@ flex: 1 0 0%;
 }
 .t4s_section_btn > div {
     margin-top: 15px;
+}
+.space_48{
+    height: 48px;
+    width: 100%;
 }
 .t4s_arrow_discount_wrap{
     display: flex;
