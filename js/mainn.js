@@ -3,13 +3,12 @@
 $('.btn_menu_mobile').click(function (e) { 
     e.preventDefault();
     $('.menu').addClass('t4s_menu_mobile');
-    $('.menu').show(300);
     $('.t4s_oveflow').show();
 });
 
 $('.t4s_exit_btn_menu_item').click(function (e) { 
     e.preventDefault();
-    $('.t4s_menu_mobile').hide(300);
+    $('.menu').removeClass('t4s_menu_mobile');
     $('.t4s_oveflow').hide();
 });
 
@@ -90,4 +89,12 @@ $('.t4s_tab_links2').click(function (e) {
     preloader: false,
 
     fixedContentPos: false
+  });
+
+  //install app
+//   var shopdomain = $(".t4s_input_new_letter").val();
+  $('.t4s_btn_new_letter').click(function (e) { 
+    e.preventDefault();
+    // console.log(`https://ecomposer.app/install?shop=${$(".t4s_input_new_letter").val()}`);
+    window.location.replace(`https://ecomposer.app/install?shop=${$(".t4s_input_new_letter").val()}`);
   });
