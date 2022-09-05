@@ -999,6 +999,8 @@ margin-top: 22px;
 .t4s_content_EC_1{
     display: flex;
     align-items: center;
+    padding-left: 0;
+    padding-right: 0;
 }
 .t4s_content_EC_2{
     padding-left: 0px;
@@ -2396,6 +2398,10 @@ flex: 1 0 0%;
     }
 }
 @media screen and (min-width: 992px){
+    .t4s_content_EC_1{
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
     .t4s_video_positon_3{
         display: block;
     }
