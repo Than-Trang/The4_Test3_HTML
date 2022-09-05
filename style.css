@@ -94,6 +94,7 @@ body{
     transition: 0.5s;
     display: flex;
     flex-wrap: wrap;
+    order: 3;
     list-style-type: none;
 }
 .logo{
@@ -175,6 +176,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    order: 2;
    align-items: center;
 
 }
@@ -1227,10 +1229,11 @@ table {
 }
 .t4s_table_content5 td{
     font-size: 14px;
-    line-height: 50px;
+    line-height: 1.5em;
     color: #000000;
     font-weight: 400;
     text-align: center;
+    padding: 14.5px 0;
 }
 .t4s_table_btn{
     display: flex;
@@ -2398,6 +2401,9 @@ flex: 1 0 0%;
     }
 }
 @media screen and (min-width: 992px){
+    .t4s_content_btn{
+        order: 3;
+    }
     .t4s_content_EC_1{
         padding-right: 1.5rem;
         padding-left: 1.5rem;
@@ -2468,6 +2474,7 @@ flex: 1 0 0%;
         display: flex;
         justify-content: center;
         align-items: center;
+        order: 2;
     }
     .t4s_witdth_img{
         width: 75% !important;
