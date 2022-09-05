@@ -2699,12 +2699,9 @@ flex: 1 0 0%;
     .menu{
         justify-content: center;
     }
-   
-    
     .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
         font-size: 130px;
     }
-    
 }
 @media screen and (min-width: 1600px){
     .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
