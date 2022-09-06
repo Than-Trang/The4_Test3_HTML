@@ -1175,10 +1175,14 @@ margin-top: 22px;
     display: none;
     bottom: 0;
 }
-
+.t4s_pd_unset{
+    padding-left: unset;
+    padding-right: unset;
+}
 .t4s_slide_wrap{
     z-index: 2;
-
+    padding-left: unset;
+    padding-right: unset;
     position: relative;
 }
 .t4s_slide_wrap .t4s_slide{
