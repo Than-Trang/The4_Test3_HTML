@@ -1257,6 +1257,8 @@ margin-top: 22px;
 }
 .t4s_img_usen_and_the4 >img{
     width: 100%;
+    height: unset;
+    object-fit: contain;
 }
 .t4s_title_usen_and_the4 >a {
     font-size: 20px;
@@ -1264,12 +1266,14 @@ margin-top: 22px;
     font-weight: 600;
     text-align: center;
     text-decoration: none;
+   
 }
 .t4s_title_usen_and_the4 a:hover{
     color: #0ec0ad;
     transition: 0.3s;
 }
 .t4s_title_usen_and_the4{
+    margin-top: 10px;
     display: flex;
     justify-content: center;
     margin-bottom: 15px;
@@ -2488,6 +2492,9 @@ flex: 1 0 0%;
     .t4s_text_bannner{
         margin-top: 90px;
     }
+    .t4s_img_usen_and_the4 >img{
+        height: 250px;
+    }
 }
 @media screen and (min-width: 992px){
     .t4s_item_review_wrap .flickity-page-dots{
@@ -2641,6 +2648,12 @@ flex: 1 0 0%;
 }
 @media screen and (min-width:1200px)
 {
+    .t4s_img_usen_and_the4 >img{
+        height: 330px;
+    }
+    .t4s_title_usen_and_the4{
+        margin-top: 30px;
+    }
     .t4s_img_position_EC{
         left: -17%;
     }
