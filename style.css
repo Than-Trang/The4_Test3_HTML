@@ -520,7 +520,7 @@ ul{
 }
 .t4s_banner_img .t4s_position_4{
     display: none;
-    max-width: 460px;
+    max-width: 350px;
     width:100%;
     height: fit-content;
     top: 10%;
@@ -2322,9 +2322,12 @@ flex: 1 0 0%;
     .t4s_btn_purcher a{
         padding: 11px 56px;
     }
-
 }
 @media screen and (min-width: 768px){
+    .t4s_banner_img .t4s_position_4{
+        display: block;
+        max-width: 350px;
+    }
     .t4s_img_position_EC{
         width: 34%;
         left: -22%;
@@ -2717,6 +2720,9 @@ flex: 1 0 0%;
     }
 }
 @media screen and (min-width: 1600px){
+    .t4s_banner_img .t4s_position_4{
+        max-width: 450px;
+    }
     .t4s_text_img_content5 .t4s_text_prebuilt_demo::before{
         font-size: 185px;
     }
