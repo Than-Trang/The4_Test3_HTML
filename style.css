@@ -2212,7 +2212,7 @@ flex: 1 0 0%;
     }
     .t4s_img_item_cS{
         padding-top: 68px;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
     .t4s_content_footer{
         padding: 25px 8px;
@@ -2701,9 +2701,6 @@ flex: 1 0 0%;
     }
     .t4s_img_position_sp {
         padding: 19px 18px;
-    }
-    .t4s_item_cS{
-        text-align: unset;
     }
 
 }
