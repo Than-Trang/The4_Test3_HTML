@@ -6,26 +6,25 @@
 .sticky_logo{
     position: fixed;
     top: 0;
-    box-shadow: 0 3px 6px rgb(229, 229, 229);
+    -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
     transition: 0.5s;
     background-color: #fff;
     z-index: 999;
     padding-top: 10px;
     padding-bottom: 10px;
-    left: 0;
-    right: 0;
 }
 .sticky .t4s_content_header {
-    margin-top: 10px;
+    margin-top: 14px;
 }
-
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 3px 6px rgb(229, 229, 229);
-    padding-bottom: 10px;
+    -webkit-box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%);
+    padding-bottom: 14px;
     transition: 0.2s;
 }
 body{
@@ -84,6 +83,7 @@ body{
    padding: 10px 0;
    display: flex;
    flex-wrap: wrap;
+   overflow: hidden;
 }
 .mw_1920{
     max-width: 1920px;
@@ -139,8 +139,8 @@ body{
 .t4s_item_top_header{
     display: flex;
     align-items: center;
-    width: fit-content;
     padding: 0 19px;
+    width: 16.66666%;
 }
 .t4s_icon_top_header svg {
     fill: #ffce33;
@@ -152,9 +152,24 @@ body{
 .t4s_icon_top_header{
     margin-top: -5px;
 }
+.marquee_flex_wrap{
+    min-width: 1600px;
+    width: 100%;
+    height: 24px;
+    overflow: hidden;
+  position: relative;
+}
+@keyframes marquee_flex_wrap {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
 .marquee_flex{
     display: flex;
-    width: 100%;
+    width: 200%;
+    height: 24px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee_flex_wrap 15s linear infinite;
 }
 .t4s_content_header{
     margin-top: 22px;
