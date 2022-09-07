@@ -11,12 +11,11 @@ $(window).resize(function () {
     $('.menu').removeClass('t4s_menu_mobile');
     $('.t4s_oveflow').hide();
   });
-  
+
   $('.t4s_li_sub_menu-click').off('click').on( "click", function(e) {  
     e.preventDefault();
     $(this).find('.t4s_sub_menu').slideToggle(300);
     $(this).toggleClass('open'); 
-    console.log('hihi')
   });
 
 
