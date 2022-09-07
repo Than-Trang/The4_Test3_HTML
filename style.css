@@ -60,10 +60,11 @@ body{
     transform: translateX(-50%);
     padding: 10px 20px;
     border-radius: 50px;
-    width: 85%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 235px;
 }
 .t4s_btn_trial a{
     text-decoration: unset;
@@ -71,7 +72,7 @@ body{
     text-align: center;
     font-weight: 600;
 }
-.t4s_btn_trial a span{
+.t4s_btn_trial a .span1{
     font-weight: 400;
 }
 .t4s_btn_trial:hover{
@@ -2202,7 +2203,7 @@ flex: 1 0 0%;
     .t4s_btn_trial{
         width: max-content;
         padding: unset;
-
+        max-width: unset;
     }
     .t4s_btn_trial a{
         padding: 10px 15px;
