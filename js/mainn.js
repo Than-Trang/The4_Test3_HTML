@@ -15,11 +15,9 @@ $(window).resize(function(){
   $('.t4s_menu_mobile > t4s_li_sub_menu').click(function(){
       $('.t4s_menu_mobile').hide(300);
   });
-
-
   $('.t4s_li_sub_menu').click(function(){
       $('.t4s_sub_menu').slideToggle(300);
-      $('.t4s_sub_menu').toggleClass('open');
+      $('.t4s_li_sub_menu').toggleClass('open');
   });
 
   $(document).mouseup(function(e) 
