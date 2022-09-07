@@ -18,6 +18,7 @@ $(window).resize(function(){
   $('.t4s_li_sub_menu').click(function(){
       $('.t4s_sub_menu').slideToggle(300);
       $('.t4s_li_sub_menu').toggleClass('open');
+      console.log('hihi')
   });
 
   $(document).mouseup(function(e) 
