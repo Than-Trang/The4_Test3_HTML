@@ -13,7 +13,7 @@ $(window).resize(function () {
   });
 
   $('.t4s_li_sub_menu-click').off('click').on( "click", function(e) {  
-    e.preventDefault();
+    // e.preventDefault();
     $(this).find('.t4s_sub_menu').slideToggle(300);
     $(this).toggleClass('open'); 
   });
