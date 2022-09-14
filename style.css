@@ -855,13 +855,12 @@ ul{
     padding: 10px;
 }
 .t4s_img_home_main_slide,.t4s_img_home_main_slide1{
-    height: 330px;
+   max-height: 330px;
     border-radius: 3px;
     background-color: #fff;
     padding: 10px;
 }
 .t4s_img_home_main_slide >div{
-    background-image: url(./images/Home\ 18_women\ copy\ \(1\).png);
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -872,6 +871,11 @@ ul{
     width: 100%;
     height: 100%;
 
+}
+.t4s_img_home_main_slide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .link_demo>img{
     width: 100%;
