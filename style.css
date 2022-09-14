@@ -250,7 +250,7 @@ body{
 }
 .t4s_buy_now_wrap{
     background: #fb2e2e;
-    padding: 10px 24px;
+    padding: 10px 20px;
 }
 .t4s_buy_now_wrap:hover{
     background: #fb2e2ebc;
@@ -730,7 +730,6 @@ ul{
     color: #ffffff;
     text-transform: uppercase;
     background: #fc2e2e;
-    border-radius: 0 15px 0 15px;
     font-weight: 500;
     width: fit-content;
     padding: 0 13px;
@@ -1439,7 +1438,7 @@ tr:first-child,.t4s_table_row {
     left: 50%;
     bottom: 0px;
     transform: translateX(-50%);
-    z-index: 999;
+    z-index: 9;
 }
 .t4s_content_6_app_partner{
     --bs-gutter-x: 50px;
@@ -2031,6 +2030,17 @@ flex: 1 0 0%;
     text-decoration: none;
     padding: 11px 28px;
 }
+.t4s_btn_purcher a span {
+    font-size: 30px;
+    position: relative;
+    top: 4px;
+    font-weight: 600;
+}
+span.original-price {
+    margin-left: 10px;
+    text-decoration: line-through;
+    color: #fb2e2e;
+}
 .t4s_btn_purcher {
     border-radius: 50px;
     background: #fff;
@@ -2364,7 +2374,7 @@ flex: 1 0 0%;
     }
     tr .t4s_table_title_bottom{
     
-        font-size: 18px;
+        font-size: 24px;
     }
     .t4s_table_text{
         font-size: 16px;
@@ -2683,7 +2693,7 @@ flex: 1 0 0%;
         padding:12px 23px ;
     }
     .t4s_buy_now_wrap{
-        padding:12px 32px ;
+        padding:12px 20px ;
         background: #fb2e2e;
     }
     .t4s_combo_offer >img{
